@@ -1,0 +1,106 @@
+:root {
+ --negro: #000;
+ --blanco: #fff;
+ --gris: #a7a7a7;
+ --fuentePrincipal: 'Nunito', sans-serif;
+ --fuenteSecundaria:'Roboto', sans-serif;
+}
+
+html {
+ box-sizing: border-box;
+ font-size: 62.5%;
+}
+
+*,*:before,*:after {
+ box-sizing: inherit;
+}
+*{
+  margin: 0px;
+}
+
+/*globales*/
+
+body {
+ font-size: 1.6rem;
+ line-height: 1.5;
+}
+
+p {
+ font-size: 1.8rem;
+ font-family:var(--fuenteSecundaria);
+ color: var(--blanco);
+}
+
+a {
+ text-decoration: none;
+  font-family: var(--fuentePrincipal);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: var(--negro);
+}
+
+img {
+ max-width: 100%;
+ margin: 0, auto;
+}
+
+.contenedor {
+ max-width: 120rem;
+ margin: 0 auto;
+}
+
+h1,h2,h3 {
+ text-align: center;
+ font-family: var(--fuenteSecundaria);
+ color: var(--blanco);
+ }
+.encabezado__imagen, .seccion__imagen, .pieDePagina__imagen{
+ position: relative;
+}
+.banner, .seccion1, .seccion2, .bannerFooter{
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.banner{
+background-image: url(../img/pila01.jpg);
+}
+.boton{
+  position: absolute;
+  top:45%;
+  right: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 5rem;
+  background-color: var(--gris);
+}
+.boton:hover{
+  background-color:var(--negro);
+  color: var(--blanco);
+}
+.encabezado__texto, .seccion__texto{
+  background-color: var(--negro);
+  padding: 2rem;
+
+  }
+  .heading3{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  /*secciones*/
+ .seccion1 {
+      background-image: url(../img/pila02.jpg);
+    }
+ .seccion2 {
+      background-image: url(../img/pila03.jpg);
+    }
+    /*footer*/
+  .bannerFooter {
+      background-image: url(../img/pila04.jpg);
+  }
+/*parallax*/
+
